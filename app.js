@@ -19,8 +19,8 @@ app.get('/', (req,res) => {
 })
 
 // Private Route
-app.get('/user/:id', async (req, res) => {
-    const id = req.params.id
+app.get('/user/:id', checkToken, async (req, res) => {
+    const id = req.params
 
     // check if user exists
     const user = await User.findById(id, '-password')
