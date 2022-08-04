@@ -1,7 +1,7 @@
 # Projeto back-end com NodeJs
-Projeto desenvolvido para estudos
+API desenvolvida com o banco de dados MongoDB com autenticação de Token
 
 # Executar aplicativo no ambiente de desenvolvimento
 ```bash
-  npm run dev
+  npm run start
 ```
